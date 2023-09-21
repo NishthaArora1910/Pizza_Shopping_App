@@ -1,0 +1,116 @@
+** JS is object based. NOT Object oriented.
+1. Emmet cheatsheet for html.
+
+2. cdn in the link of bootstrap : content delivery network. 
+ ques interview : what is CDN in bootstrap
+(provide the catching due to which websites becomes morre fast.)
+
+3. to talk to the database we need RESTFUL Webservieces/web API/ Web Services.
+
+
+Problems:
+
+1. network call (Async calls)
+2. JSON (Serialisation and DeSerialisation)
+  a. convert object into json (Serialisation) Sringfy();
+  b. json into Object (DeSerialisation)  json.parse();
+3. Data (Object) -> html
+  DOM, (Dynamic HTML)
+4. Async V/S Sync
+5. JS internal Arch.
+
+=> chrome (V8 Engine for Js)
+> Event loop : will do all work uin js 
+> Event Queue : will store the next comming up processes for Event loop.
+
+> Sync : will block the next processses until the current work is not done.(eg. meri karan arjun aayenge daily wait)
+
+> Async : will not block the processes(Like a Stack) eg. Dominos pizza
+
+> callback mechenisum js : for time taking tasks eg. amazon Delivery.
+
+> Async Thread.
+> Async calls will always give you promise 
+
+eg. of promise (Pizza order kiya they said wait for 30 min then you go after 10 sec and askedthen where is my pizza they will say its not ready yet but ypu say payment is already done toh pizza do . they will say milega milega the payment bill is an promise )
+
+=> Promise has 3 stages :
+     i. Pending 
+     ii. Fullfield
+     iii. Rejected
+
+SRP (SINGLE PRESPONSIBLITY PAGE)FOR NETWORKING
+
+> we never want our logic to want to talk to html.
+eg. car comanies focus on making the engine then only fit that engine in differnt types of car models.(UI)
+
+
+HTML -> CONTROLLER -> LOGIC
+     <-             <-
+* Ques: WHY MAKE COntroller folder 
+* ans. TO BUILD THE LOOSELY COUPED APP. 
+(Eg. Arjun - loosly couped) (eg. Karan tightly couped)
+
+
+1.into of project 
+2. features
+3. structure
+
+callback help Problems due to multiple promises
+
+sync: 
+ try catch 
+
+ for async:
+  then catch
+  
+  > MVP (Minimal Viable Product).
+     means only MINIMAL required FEATURES OF the site ot app is included. 
+
+  > MVC (MODEL VIEW CONTROLLER ) (best design practice in the industry). 
+     used MVC for segriggation of files .
+
+> DOM (document Object MODEL)
+> BOM (Browser object model )
+ DOM and BOM both are pre-Build APIs.
+
+Window---> DOM --> document ->  img.
+ |   |                      ->  p.
+ |   |                      ->  h1.
+ |   | 
+ [ Screen , History.,Navigator. ,Local Storage., Session Storage. , Location. ] --> BOM
+
+> document.creatObject  (for Dynamic creation) .
+
+----> validate json for json correction.
+>can create the server.json if not wanted to host the json file in the github.
+
+!>>>> WHAT TO DO PLAN >>>>>
+ Adding in basket functionality
+A) add to cart button click event attach , bind function
+   ?  Where - Controller (DOM)
+B) how function identify which pizza add to cart is clicked?
+every pizza has unique id comming from backend , when we click on a button we get pizza unique id
+C) we attach id with every pizza ( and that id must be unique)
+D) WE get pizza id , all id are coming from backend
+now look up id inside the pizza array , by using find method in array, now once you get the object then mark a flag in cart in every object
+E) print in basket , those object whose mark flag is true
+
+
+> loader (index.html) and linker (controller)
+? DO YOU KNOW LOADER AND LINKER ?
+
+?why await is async? because it is not then the Event Loop will be in sync. 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+<----------   Payment integration Mechanism -----> 
+
+1. https://razorpay.com/
+ > will give you an test account (fake account).
+ > test API key.
+
+ -------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------- MVC Structured APPLICATIONS ------------------
+   --> news api use kerke ( News App ).
+   --> itunes Api (uMsic App ).
+   --> shopping fake api (fake store api ) ( Shopping App ).
+   --> 
